@@ -35,7 +35,7 @@ def template_route():
     """
     A template route for the flask backend
     """
-    return {'obj': "Test template!"}
+    return {'context': "Test template!"}
 ```
 
 ### Set up "proxy" redirection from React to Flask
