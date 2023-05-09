@@ -4,11 +4,11 @@ import React, { useState, useEffect } from 'react';
 
 
 function App() {
-  const [currentGreeting, setCurrentGreeting] = useState();
+  const [currentTemplate, setCurrentTemplate] = useState();
 
   useEffect(() => {
-    fetch('/greet').then(res => res.json()).then(data => {
-      setCurrentGreeting(data.greet);
+    fetch('/test-route').then(res => res.json()).then(data => {
+      setCurrentTemplate(data.context);
     });
   }, []);
 
@@ -17,7 +17,7 @@ function App() {
       <header className="App-header">
 
       <img src={logo} className="App-logo" alt="logo" />
-        <p>{currentGreeting}</p>
+        <p>{currentTemplate}</p>
       </header>
     </div>
   );
