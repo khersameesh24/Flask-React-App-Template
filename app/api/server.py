@@ -9,4 +9,4 @@ def template_route():
     """
     A template route for the flask backend
     """
-    return {'context': "Test template!"}
+    return {'context': "Test message!"}
